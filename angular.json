@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -97,8 +98,18 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "mastergym:build:production"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "405de084-e487-4519-ad35-a1ce5cee936c"
   }
 }
